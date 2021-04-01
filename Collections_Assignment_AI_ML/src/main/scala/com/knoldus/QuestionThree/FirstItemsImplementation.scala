@@ -18,7 +18,10 @@ object FirstItemsImplementation extends  App {
     print("Enter count less than or equal to size of list..." + "\n")
   }
   else{
-    print(firstItemsImplementation.first(inputList,countOfItems))
+    print("Using the recursive method: " + firstItemsImplementation.firstWithRecursion(inputList,countOfItems) + "\n")
+    print("Using the fold left method: " + firstItemsImplementation.firstUsingFoldLeft(inputList,countOfItems) + "\n")
+    print("Using the for loop method: " + firstItemsImplementation.firstUsingForLoop(inputList,countOfItems) + "\n")
+    print("Using the using in built method: " + firstItemsImplementation.firstUsingInBuiltMethod(inputList,countOfItems) + "\n")
   }
 
 }

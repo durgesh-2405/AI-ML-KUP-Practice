@@ -13,6 +13,10 @@ object PalindromeSeparatorImplementation extends App {
 
   val palindromeSeparatorImplementation = new PalindromeSeparatorApi
 
-  print(palindromeSeparatorImplementation.separatePalindrome(inputList))
+  print("Separated list of palindromes and non palindromes: ")
+  print(palindromeSeparatorImplementation.separatePalindrome(inputList) + "\n")
+  print("Separated list of palindromes and non palindromes using built in method: ")
+  print(palindromeSeparatorImplementation.separatePalindromeUsingBuiltIn(inputList) + "\n")
+
 
 }
